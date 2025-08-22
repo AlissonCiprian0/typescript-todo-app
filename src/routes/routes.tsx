@@ -1,4 +1,4 @@
-import { Navigate, Outlet, Route, Routes, useRoutes } from 'react-router-dom';
+import { Navigate, Outlet, useRoutes } from 'react-router-dom';
 import { List, Todo } from '../commons/types';
 import { handleTaskAdd } from '../components';
 import AddTask from '../components/AddTask/AddTask';

@@ -78,7 +78,7 @@ export const TodoInfo = ({
 
     let newList: List = todoList;
 
-    let elIndex = newList.items.findIndex((el) => el.id == itemID);
+    let elIndex = newList.items.findIndex((el) => el.id === itemID);
 
     newList.items[elIndex] = item;
 
@@ -114,6 +114,7 @@ export const TodoInfo = ({
     } else {
       fetchToDos();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (item.id !== -1)
